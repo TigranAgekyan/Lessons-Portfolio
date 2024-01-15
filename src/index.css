@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply cursor-none
+  }
+  
+  .c--hidden {
+    opacity: 0;
+  }
+  
+  .c--clicked {
+    @apply
+    bg-cherry_blossom_pink-500
+    bg-opacity-25
+    backdrop-blur-sm
+    scale-75
+  }
+  
+  .c--link-hovered {
+    @apply
+    bg-cherry_blossom_pink-500
+    bg-opacity-25
+    backdrop-blur-sm
+    scale-[1.25]
+  }
+  
+  .cursor {
+    @apply
+    w-[64px] aspect-square rounded-full border border-black bg-cherry_blossom_pink-500 bg-opacity-25 backdrop-blur-sm fixed translate-x-[-50%] translate-y-[-50%]
+    transition duration-200 pointer-events-none z-50 animate-none;
+  }
